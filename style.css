@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./img/fundo.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.liblovers-wrapper{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+}
+
+.liblovers-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120vh;
+    background-color: rgba(12, 7, 0, 0.596);
+}
+
+.liblovers-description p{
+    color: antiquewhite;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.desenho-logo img{
+    width: 18rem;
+    height: 12rem;
+    margin-top: 2rem;
+}
+
+.texto-logo img{
+    height: 10rem;
+    margin-top: 10rem;
+
+}
+
+.liblovers-continue{
+    display: flex;
+    align-self: stretch;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 50%;
+    height: 102.5vh;
+    background-color: rgba(0, 0, 0, 0.877);
+    padding-top: 1rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.group:nth-child(1){
+    min-height: 15rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 5px solid antiquewhite;
+    overflow: hidden;
+}
+
+.profile-photo img{
+    height: 10rem;
+}
+
+.liblovers-logo{
+    width: 70px;
+}
+
+.liblovers-login{
+    background-color: #856F81;
+    border-radius: 10px;
+    color: white;
+    padding: 8px;
+    margin-top: 20px;
+}
+
+.liblovers-logout{
+    color: #846763;
+    margin-top: 9px;
+}
+
+.not-account{
+    color: #d8b2d0;
+    font-weight: bold;
+    text-align: center;
+    line-height: 25px;
+}
+
+.not-account a{
+    color: #EF9457;
+    font-weight: bold;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.get-app{
+    color: #d8b2d0;
+    font-weight: bold;
+}
+
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1.3rem;
+}
+
+.app-download{
+    height: 2.2rem;
+    width: 7.5rem;
+    background-size: cover;
+    margin: 5px;
+}
+
+.app-download:nth-child(2){
+    background-image: url('./img/googleplay-button.png');
+}
+
+.app-download:nth-child(1){
+    background-image: url('./img/apple-button.png');
+}
+
+@media(max-width:1024px){
+    .liblovers-wrapper{
+        width: 100%;
+    }
+}
+
+@media(max-width:650px){
+    .liblovers-wrapper{
+        width: 100%;
+    }
+
+    .liblovers-description{
+        display: none;
+    }
+
+    .liblovers-continue{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;
+    }
+
+    .app-download{
+        width: 7rem;
+        height: 2rem;
+    }
+}
